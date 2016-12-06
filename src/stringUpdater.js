@@ -1,0 +1,1 @@
+export let update = (string, ...params) => string;
