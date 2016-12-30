@@ -1,5 +1,6 @@
-import { update } from './arrayUpdater';
-import { assert } from 'assert';
+import update from './arrayUpdater';
+import assert from 'assert';
+
 
 let res;
 

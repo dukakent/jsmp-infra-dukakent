@@ -1,13 +1,19 @@
-let push = (array, value) => array.push(value);
+let push = (array, value) => {
+    array.push(value)
+    return array;
+};
 
 let change = (array, place, value) => {
     array[place] = value;
     return array;
 };
 
-let del = (array, place) => array.splice(place, 1);
+let del = (array, place) => {
+    array.splice(place, 1);
+    return array;
+};
 
-export let update = (array, ...params) => {
+export default (array, ...params) => {
     let result;
 
     switch(params[0]) {
