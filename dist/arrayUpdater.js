@@ -18,7 +18,7 @@ var del = function del(array, place) {
     return array;
 };
 
-export default function (array) {
+exports.default = function (array) {
     var result = void 0;
 
     switch (arguments.length <= 1 ? undefined : arguments[1]) {

@@ -1,5 +1,5 @@
-import update from './stringUpdater';
 import assert from 'assert';
+import update from './stringUpdater';
 
 let res;
 
@@ -11,6 +11,6 @@ assert(res === '1z34', 'changes second character');
 
 res = update('abcd', 'delete', 2);
 assert(
-    res === 'abd',
-    'removes third character'
+  res === 'abd',
+  'removes third character',
 );

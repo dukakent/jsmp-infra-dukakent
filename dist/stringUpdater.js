@@ -20,7 +20,7 @@ var del = function del(string, place) {
     return arr.join('');
 };
 
-export default function (array) {
+exports.default = function (array) {
     var result = void 0;
 
     switch (arguments.length <= 1 ? undefined : arguments[1]) {

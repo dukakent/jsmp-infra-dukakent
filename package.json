@@ -7,7 +7,9 @@
     "test": "node dist/test.js",
     "build": "babel src -d dist",
     "start": "node dist/app.js",
-    "clean": "del-cli ./dist"
+    "clean": "del-cli ./dist",
+    "lint": "./node_modules/.bin/eslint \"./src/**\"",
+    "publish:patch": "npm run lint && npm version patch"
   },
   "author": "Inokentii Duka",
   "license": "ISC",
@@ -18,7 +20,10 @@
     "assert": "^1.4.1",
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
-    "del-cli": "^0.2.0"
+    "del-cli": "^0.2.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0"
   },
   "babel": {
     "presets": [
